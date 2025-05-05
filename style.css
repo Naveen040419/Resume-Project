@@ -1,0 +1,586 @@
+:root{
+    --primary-color : #ff511a;
+    --secondary-color : #43ba7f;
+    --text-color : #212741;
+    --bg-color : #fff;
+    --link-color : #e36402;
+    --dark-bg-color : #181d30;
+}
+
+body{
+    font-size : 16px;
+}
+
+.header-container{
+   background-image: url("Multimedia/laptop-image.jpg");
+   background-size: cover;
+   background-position: center;
+   height: 65vh;
+   width : 100vw;
+   animation : slidein 2s ease-out forwards;
+}
+
+.header-navbar{
+    display:flex;
+    justify-content: center;
+    gap : 2.5rem;
+    padding-top : 1rem;
+}
+
+.header-navbar a{
+    text-decoration: none;
+    color : var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.header-navbar a:hover{
+    color : white;
+}
+
+.header-heading h1{
+    text-align: center;
+    color : var(--text-color);
+    font-size: 4rem;
+    margin-top : 6rem;
+}
+
+.header-icon{
+    display: flex;
+    justify-content: center;
+    gap : 2rem;
+    margin-top : 1rem;
+}
+
+.header-icon i,
+.header-icon a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 2rem;
+}
+
+
+@keyframes slidein{
+
+    0%{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+
+}
+
+.about{
+    width: 100vw;
+    height: auto;
+    margin-bottom : 5rem;
+}
+
+.about .about-image{
+    text-align: center;
+    animation: slideup 2s ease-out forwards;
+}
+
+.about-image img{
+    width : 14rem;
+    height: 15rem;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px var(--text-color);
+}
+
+@keyframes slideup{
+
+    0%{
+        transform: translateY(0px);
+    }
+
+    100%{
+        transform: translateY(-100px);
+    }
+}
+
+.about-details{
+    width : 70vw;
+    margin : -1rem auto;
+
+}
+
+.about-details p{
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.about-details p span{
+    color : var(--primary-color);
+}
+
+.skills{
+    width : 100vw;
+    height: auto;
+    background-color: rgb(240, 237, 237);
+}
+
+.skills-progress-bar{
+    width : 100vw;
+    margin-top : 6rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap : 2rem;
+}
+
+.skills-heading{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap : 2rem;
+    padding-top : 2rem;
+}
+
+.skills-heading i,p{
+    font-size: 4rem;
+    color: var(--text-color);
+}
+
+.skill-parent{
+    width : 200px;
+    height: 35px;
+    background-color: rgb(156, 151, 151);
+    border-radius: 1rem;
+}
+
+.skill-bar-1 span, .skill-bar-2 span, .skill-bar-3 span, .skill-bar-4 span{
+    margin-left : 0.5rem;
+    color : white;
+}
+
+.skill-bar-1{
+    width : 180px;
+    height: 35px;
+    overflow: hidden ;
+    background-color: #43ba7f;
+    border-radius: 1rem;  
+}
+
+.skill-bar-2{
+    width : 170px;
+    height: 35px;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+}
+
+.skill-bar-3{
+    width : 150px;
+    height: 35px;
+    background-color :blueviolet;
+    border-radius: 1rem;
+}
+
+.skill-bar-4{
+    width : 130px;
+    height: 35px;
+    background-color:cornflowerblue;
+    border-radius: 1rem;
+}
+
+
+.experience{
+    margin-top : 4rem;
+    width : 100vw;
+}
+
+.experience-heading{
+    display: flex;
+    gap : 2rem;
+    justify-content : center;
+    align-items: baseline;
+}
+
+.experience-container{
+    position: relative;
+    display: grid;
+    margin : 5rem 10rem;
+    gap : 5rem;
+    grid-template-columns: repeat(2, 0.8fr);
+    grid-template-rows: repeat(2, 0.8fr); 
+}
+
+.experience-divider{
+    position : absolute;
+    height: 80vh;
+    top : 2rem;
+    margin : 0 50%;
+    border : 2px dotted rgb(26, 26, 138);
+    width: 0;
+}
+
+.experience-divider-icon{
+    position: sticky;
+    transform: rotate(90deg);
+}
+
+.experience-time h5{
+    color : rgb(39, 39, 160);
+}
+
+.experience-time p:nth-child(2){
+    color : var(--link-color);
+}
+
+.experience-div{
+    box-sizing: border-box;
+    background-color: lightgrey;
+    padding : 2rem;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 10px gray;
+}
+
+.experience-div:nth-child(2), 
+.experience-div:nth-child(3){
+    background-color: white;
+    box-shadow: none;
+}
+
+.experience-heading i,h1{
+    font-size: 4rem;
+    color: var(--text-color);
+}
+
+.experience-div-manage{
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience-image img{
+    width : 75px;
+    height : 75px;
+}
+
+.experience-time p{
+    font-size: 1em;
+} 
+
+.experience-data p{
+    font-size : 1em;
+}
+
+
+.education{
+    margin-top : 4rem;
+    width : 100vw;
+}
+
+.education-heading{
+    display: flex;
+    gap : 2rem;
+    justify-content : center;
+    align-items: baseline;
+}
+
+.education-container{
+    position: relative;
+    display: grid;
+    margin : 5rem 10rem;
+    gap : 5rem;
+    grid-template-columns: repeat(2, 0.8fr);
+    grid-template-rows: repeat(2, 0.8fr); 
+}
+
+.education-divider{
+    position : absolute;
+    height: 80vh;
+    top : 2rem;
+    margin : 0 50%;
+    border : 2px dotted rgb(26, 26, 138);
+    width: 0;
+}
+
+.education-divider-icon{
+    position: sticky;
+    transform: rotate(90deg);
+}
+
+.education-time h5{
+    color : rgb(39, 39, 160);
+}
+
+.education-time p:nth-child(2){
+    color : var(--link-color);
+}
+
+.education-div{
+    box-sizing: border-box;
+    background-color: lightgrey;
+    padding : 2rem;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 10px gray;
+}
+
+.education-div:nth-child(2), 
+.education-div:nth-child(3){
+    background-color: white;
+    box-shadow: none;
+}
+
+.education-heading i,h1{
+    font-size: 4rem;
+    color: var(--text-color);
+}
+
+.education-div-manage{
+    display: flex;
+    justify-content: space-between;
+}
+
+.education-image img{
+    width : 75px;
+    height : 75px;
+}
+
+.education-time p{
+    font-size: 1em;
+} 
+
+.education-data p{
+    font-size : 1em;
+}
+
+
+.contact{
+    width : 100vw;
+    background-image: linear-gradient(to right, rgb(54, 54, 153), rgb(185, 93, 185));
+}
+
+.contact p{
+    font-size : 1em;
+}
+
+.contact-heading{
+    padding-top : 5rem;
+    display: flex;
+    gap : 2rem;
+    justify-content : center;
+    align-items: baseline;
+    font-size: 4rem;
+    color: var(--text-color);
+}
+
+.contact-container{
+    display: flex;  
+    width : 100%;
+}
+
+.contact-section{
+    box-sizing: border-box;
+    width : 50%;
+    margin-top : 5rem;
+    margin-left : 5rem;
+}
+
+.contact-section p{
+    font-size: 1.5rem;
+    color : white;
+}
+
+.contact-section div{
+    width : 80%;
+    border : 2px solid white;
+    margin-bottom : 2rem;
+}
+
+.contact-section button{
+    margin-top : 2rem;
+    color : white;
+    padding : 1rem 2rem;
+    outline: none;
+    background-image: linear-gradient(to right, rgb(54, 54, 153), rgb(185, 93, 185));
+}
+
+.contact-data{
+    width : 50%;
+    margin-top : 5rem;
+    margin-right : 5rem;
+}
+
+.contact-data p:nth-child(odd){
+    color : white;
+    font-size : 2rem;
+}
+
+.contact-data p:nth-child(even){
+    color : white;
+}
+
+.contact-data div{
+    display: flex;
+    gap : 1.5rem;
+    align-items: baseline;
+}
+
+.contact-data div i,
+.contact-data div p{
+    font-size: 1.2rem;
+}
+
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    gap : 2rem;
+    margin-top : 1rem;
+    padding : 2rem 0;
+}
+
+.footer-icon i,
+.footer-icon a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+
+
+@media screen and (max-width : 876px){
+
+    .experience-divider{
+       display: none;
+    }
+
+    .education-divider{
+        display: none;
+    }
+
+    @media screen and (max-width : 756px){
+
+        .header-heading h1{
+            font-size: 3rem;
+        }
+
+        .header-navbar{
+            gap : 1.5rem;
+            padding-top : 1rem;
+        }
+
+        .header-navbar a{
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .experience-heading i,h1{
+            font-size: 3rem;
+            color: var(--text-color);
+        }
+
+        .experience-heading p{
+            font-size: 3rem;
+            color: var(--text-color);
+        }
+
+        .experience-container .experience-div:nth-child(2),
+        .experience-container .experience-div:nth-child(3){
+            display: none;
+        }
+
+        .experience-container{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+
+        .education-heading i,h1{
+            font-size: 3rem;
+            color: var(--text-color);
+        }
+
+        .education-heading p{
+            font-size: 3rem;
+            color: var(--text-color);
+        }
+
+        .education-container .education-div:nth-child(2),
+        .education-container .education-div:nth-child(3){
+            display: none;
+        }
+
+        .education-container{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        .contact-heading i,
+        .contact-heading p{
+            font-size : 3rem;
+        }
+
+        .contact-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        @media screen and (max-width : 576px ){
+
+            .header-navbar{
+               flex-wrap: wrap;
+            }
+
+            .header-navbar a{
+                font-size: 1rem;
+            }
+
+            .header-heading h1{
+                font-size: 2.5rem;
+            }
+
+            .experience-heading i{
+                font-size: 2rem;
+                color: var(--text-color);
+            }
+    
+            .experience-heading p{
+                font-size: 2rem;
+                color: var(--text-color);
+            }
+
+            .education-heading i{
+                font-size: 2rem;
+                color: var(--text-color);
+            }
+    
+            .education-heading p{
+                font-size: 2rem;
+                color: var(--text-color);
+            }
+
+            
+            @media screen and (max-width : 496px){
+
+                .header-navbar a{
+                    font-size : 0.8rem;
+                    gap : 1rem;
+                }
+
+                .skills-progress-bar{
+                    width : 100vw;
+                    margin-top : 6rem;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    justify-items: center;
+                    gap : 2rem;
+                }
+
+                .contact-heading i,
+                .contact-heading p{
+                    font-size : 2rem;
+                }
+            }
+        }
+
+    }
+}
+
+
+
