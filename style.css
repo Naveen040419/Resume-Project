@@ -223,13 +223,14 @@ body{
 }
 
 .experience-divider{
-    position : absolute;
+    position: absolute;
     height: 80vh;
-    top : 2rem;
-    margin : 0 50%;
-    border : 2px dotted rgb(26, 26, 138);
+    top: 2rem;
+    margin: 0 50%;
+    border: 2px dotted rgb(26, 26, 138);
     width: 0;
 }
+
 
 .experience-divider-icon{
     position: sticky;
